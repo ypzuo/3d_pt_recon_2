@@ -1,0 +1,11 @@
+python train_ae_pure_emd.py \
+	--data_dir_pcl data/shapenet/ShapeNet_pointclouds \
+	--exp expts/6/pure_ae_1024_lamp_cd \
+	--gpu 0 \
+	--category lamp \
+	--bottleneck 512 \
+	--batch_size 256 \
+	--lr 5e-4 \
+    --max_epoch 100 \
+	--bn_decoder \
+	--print_n 20 \
